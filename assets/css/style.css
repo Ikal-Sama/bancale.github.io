@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  color:  #0dafeb;
+  color:  #073b4e;
   font-size: larger;
 }
 ul{
@@ -31,7 +31,8 @@ ul{
 }
 li{
   list-style-type: none;
-  gap: 15px
+  gap: 15px;
+  font-size: 25px;
 }
 ul:hover{
   color: #91b0df;
