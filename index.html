@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="stylesheet" href="https://kit.fontawesome.com/5f3ab5b91c.css" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5f3ab5b91c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+<header class="fixed-header">
+    <nav>
+        <div class='nav-header'>
+            <div class="logo">
+              <span><b>D</b>j</span>
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li onclick="scrollToHome('home')">Home</li>
+                    <li  onclick="scrollToSkills('skills')">Skills</li>
+                    <li onclick="scrollToProjects('projects')">Projects</li>
+                    <li onclick="scrollToContact('contact')">Contact Me</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <div class="home" id='home'>
+        <div class="animate__animated animate__backInLeft">
+            <span class="iams ">I am,</span>
+            <h1 class='name' >Daniel Jhon Bancale</h1>
+            <p style="text-align: left;">I am Inspiring to be a front end web developer,
+               i'm willing to learn new things and
+              very hardworking i love making website's projects.
+            </p>
+            <div class="social-meadia">
+             <div class="soc-content">
+                <i class="fa-brands fa-facebook" style="margin-top: 2.3rem; color: #095fc2;"></i>
+                <h6>Danieljhon Bancale</h6>
+                <i class="fa-brands fa-google"  style="margin-top: 2.3rem; color: #e9a64e;"></i>
+                <h6>bancale146@gmail.com</h6>
+                <i class="fa-solid fa-mobile" style="margin-top: 2.3rem;"></i>
+                <h6>09357237298</h6>
+             </div>
+
+            </div>
+        </div>
+        <div class="animate__animated animate__backInRight">
+            <img src="assets/img/Dj.jpg" alt="" class='image '>
+        </div>
+    </div>
+
+    <div class='skill-container animate__animated' id='skills'>
+      <div class='skills'>
+        <span class='skill-title'>SKILLS</span>
+      </div>
+        <div class='card-skill'>
+            <div class='card-skill-content'>
+                <div class='card-skill-body'>
+                   <img src="assets/img/html-logo.png" alt="">
+                   <span style="font-size: 20px;">HTML</span>
+                </div>
+
+                <div class='card-skill-body'>
+                  <img src="assets/img/css-logo.png" alt="">
+                  <span style="font-size: 20px;">CSS</span>
+               </div>
+
+               <div class='card-skill-body'>
+                <img src="assets/img/javascript-logo.png" alt="">
+                <span style="font-size: 15px;">JAVASCRIPT</span>
+             </div>
+
+             <div class='card-skill-body'>
+              <img src="assets/img/Reactjs.png" alt="">
+              <span style="font-size: 15px;">REACT JS</span>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='project-container animate__animated animate__bounceInDown' id='projects'>
+      <div class='project-title'>
+        <span clas='project-text'>PROJECTS</span>
+      </div>
+    <div>
+      <div class='projects'>
+        <div class='project-content'>
+       
+              <div class='project-body'>
+                <img src="assets/img/dashboardimg.png" alt="" style='width: 20rem'>
+                <p>DashBoard Project using Reactjs</p>
+              </div>
+          
+              <div class='project-body'>
+                <img src="assets/img/dashboardimg.png" alt="" style='width: 20rem'>
+                <p>DashBoard Project using Reactjs</p>
+              </div>
+
+              <div class='project-body'>
+                <img src="assets/img/dashboardimg.png" alt="" style='width: 20rem'>
+                <p>DashBoard Project using Reactjs</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="contact animate__animated animate__backInRight" id="contact">
+      <div class="contact-title">
+        <span>CONTACT ME</span>
+      </div>
+      <div>
+        <div class="contacts">
+          <form action="https://getform.io/f/22da7cd3-2acb-46eb-a522-696e13ac6f8a" method="POST">
+              <div class="contact-content">
+                <label for="">YOUR NAME: </label>
+                <input type="text" name="name" id="name" required>
+                <label for="">YOUR EMAIL: </label>
+                <input type="email" name="email" id="email" required>
+                <label for="">YOUR MESSAGE: </label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <button type="submit">SEND</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <script src='assets/js/script.js'></script>
+  </body>
+</html>
