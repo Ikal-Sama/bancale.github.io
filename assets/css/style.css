@@ -1,294 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;400;500&display=swap');
 
-html{
-    font-family: 'Lato';
-}
-body {
-    margin: 0;
+
+*{
     padding: 0;
-    width:100vw;
-    height: 100vh;
-    background-color: #f7f2ef;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo';
 }
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
+body{
+    text-align: center;
+   background-image: linear-gradient(to right, #4dc3ff, #4dc3ff)
 }
-.nav-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  color:  #073b4e;
-  font-size: larger;
+h4{
+    font-size: larger;
+    color: black;
+    margin-left: 15px;
 }
-ul{
-  display: flex;
-  gap: 10px;
-}
-li{
-  list-style-type: none;
-  gap: 15px;
-  font-size: 25px;
-}
-ul:hover{
-  color: #91b0df;
-}
-li:hover{
-  color: #7f3fe6;
-  text-decoration: underline;
-  cursor: pointer;
-}
-b{
-  color: #8a43fc;
-}
-.logo{
-  font-size: 30px;
-  box-shadow: 0px 5px #c1c9cc;
-}
-                                /*LOADER*/
-.loader-wrapper {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #242f3f;
-    display:flex;
+section{
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+    display: inline-flex ;
     justify-content: center;
     align-items: center;
-  }
-  .loader {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    border: 4px solid #Fff;
-    animation: loader 4s infinite ease;
-  }
-  .loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: #fff;
-    animation: loader-inner 5s infinite ease-in;
-  }
-  
-  @keyframes loader {
-    0% { transform: rotate(0deg);}
-    25% { transform: rotate(180deg);}
-    50% { transform: rotate(180deg);}
-    75% { transform: rotate(360deg);}
-    100% { transform: rotate(360deg);}
-  }
-  
-  @keyframes loader-inner {
-    0% { height: 0%;}
-    25% { height: 0%;}
-    50% { height: 100%;}
-    75% { height: 100%;}
-    100% { height: 0%;}
-  }
-
-  /*****************************************Home PAGE********************************/  
-
-  .home{
-     margin-top: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60rem;
-    margin-left: 15rem;
-  }
-  .image{
-    width: 50vh;
-    height: 60vh;
-    border-radius: 5px;
-    box-shadow: 20px 20px #a3d0e7;
-  }
-  .iams{
-    font-size: 40px;
-    color: #8b8885;
-    text-shadow: 0px 10px #d0d2d3;
-  }
-  .name {
-    font-size: 50px;
-    color: #2e2555;
-  }
-  .home p {
-    font-size: 20px;
-    color: #606161;
-  }
-  .soc-content{
-    display: flex;
-    gap: 10px;
-  }
-  .soc-content, h6{
-    font-size: 15px;
-    color: #3c1d41;
-  }
-  .soc-i {
-    display: flex;
-  }
-
-
-  /**************************************** SKILLS ****************************************************************/
-  
-  .bounce {
-    animation: bounce 1s;
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    25% {
-      transform: translateY(-10px);
-    }
-    50% {
-      transform: translateY(0);
-    }
-    75% {
-      transform: translateY(-5px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-  .skill-container{
-    margin: 25rem;
-  }
-  
-  .skills{
-    margin-top: 4rem;
-  }
-  .skills, .skill-title{
-    font-size: 30px;
-    color: #8f8c8c;
-    text-align: center;
-  }
-  .card-skill{
-    display: flex;
-    justify-content: center;
-  }
-  .card-skill, .card-skill-content{
-    margin-top: 3rem;
-    display: flex;
-    gap: 10rem;
-  }
- .card-skill-body{
-    border: skyblue 1px solid;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #dcdfe0;
-    box-shadow: 10px 10px #b3dfee;
-  }
-  .card-skill-body:hover{
-    background-color: #002330;
-    color: #ffff
-  }
-  .card-skill-body, span{
-    text-align: center;
-  }
-  .card-skill-body, img{
-    width: 5rem;
-
-  }
-
-
-  /**************************************** PRJECTS *********************************************************/
-
- .project-container{
-  margin: 25rem;
- }
- .project-title{
-  margin-top: 4rem;
- }
- .project-title, .project-text{
-  font-size: 30px;
-    color: #8f8c8c;
-    text-align: center;
- }
-.projects{
-  display: flex;
-  justify-content: center;
+    margin: 10rem;
+    box-shadow: black 2%;
+    box-shadow: 10px 10px 5px #a7a7a7;
 }
-
-.projects, .project-content{
-  margin-top: 3rem;
-  display: flex;
-  gap: 5rem;
-}
-
-.project-body{
-  border: #1f59f7 1px solid;
-  padding: 20px;
-  background-color: #a2e3fa;
-  box-shadow: 15px 15px #b1aad1;
-}
-.project-body:hover{
-  background-color: #083342;
-  color: #fff;
-}
-
-.project-body, p{
-  text-align: center;
-}
-
-
-/*******************************************************CONTACT ************************************************/
-
-
-.contact{
-  margin: 30rem;
-  margin-top: 38rem;
-}
-
-.contact-title, span {
-  font-size: 30px;
-  color: #8f8c8c;
-  text-align: center;
-}
-.contacts {
-  margin-top: 2rem;
-  background-color: #91b0df;
-  padding: 25px;
-}
-form, .contact-content {
-  display: flex;
-  flex-direction: column;
-}
-input{
-  height: 2rem;
-  margin-bottom: 5px;
-  font-size: 15px;
-  border: #7f3fe6 1px solid;
-  border-radius: 5px;
-}
-input:focus{
-  outline: none;
-}
-textarea{
-  margin-bottom: 5px;
-  font-size: 15px;
-  border: #7f3fe6 1px solid;
-  border-radius: 5px;
-}
-textarea:focus{
-  outline: none;
+section img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 55%;
 }
 button{
-  height: 2.5rem;
-  font-size: large;
-  border: none;
-  background-color: #8168f0;
-  color: #Fff;
+    margin-top: 15px;
+margin-right: 15px;
+padding: 5px;
 }
-button:hover{
-  background-color: #2e2555;
-  cursor: pointer;
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background: #f34343;
+    border: none;
+    padding: 10px;
+    color: black
+}
+.btn2{
+    background: #4af358;
+    border: none;
+    padding: 10px;
+    color: black
+}
+.btn:hover{
+    cursor: pointer;
+    background: #e01414;
+    color: white;
+}
+.btn2:hover{
+    cursor: pointer;
+    background: #04913a;
+    color: white;
+}
+h1{
+    color: white;
+}
+.yesSection{
+    margin-top: 10%;
+    width: 30%;
+    display: inline-block;
+}
+.noSection, img{
+    width: 150px;
+}
+.noSection{
+    
+    display: inline-block;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  section{
+    display: inline-block
+  }
 }
